@@ -1,0 +1,401 @@
+.history-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0 76px;
+  background: #fff;
+  text-align: left;
+}
+
+.history-hero::after {
+  position: absolute;
+  top: -115px;
+  right: -155px;
+  bottom: auto;
+  left: auto;
+  width: 480px;
+  height: 480px;
+  border: 75px solid #f1f6fb;
+  border-radius: 50%;
+  background: transparent;
+  transform: none;
+  content: "";
+  pointer-events: none;
+}
+
+.history-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.history-hero .eyebrow {
+  color: var(--brand-blue);
+}
+
+.history-hero .display {
+  margin: 19px 0 20px;
+  color: var(--brand-blue);
+}
+
+.history-title-dot {
+  color: var(--brand-red);
+}
+
+.history-hero__intro {
+  max-width: 560px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.history-archive-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 29px 0 0;
+  color: #335b80;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.history-archive-note span {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  border-radius: 50%;
+  background: var(--brand-blue);
+}
+
+.history-timeline {
+  overflow: hidden;
+  padding: 62px 0 66px;
+  background: #e8f0f8;
+}
+
+.timeline-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 68px;
+}
+
+.timeline-intro .eyebrow {
+  margin-top: 4px;
+  color: var(--brand-blue);
+}
+
+.timeline-intro > p:last-child {
+  max-width: 475px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.timeline-list {
+  position: relative;
+  isolation: isolate;
+}
+
+.timeline-connector {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.timeline-connector__path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.milestone {
+  --milestone-color: #c51f32;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(112px, 14vw, 190px) minmax(0, 1fr);
+  align-items: center;
+  min-height: 285px;
+  margin-bottom: 88px;
+}
+
+.milestone:last-child {
+  margin-bottom: 0;
+}
+
+.milestone--blue {
+  --milestone-color: var(--brand-blue);
+}
+
+.milestone__photo {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0 0 40px 0;
+  background: #d5e3ef;
+}
+
+.milestone__photo img {
+  position: relative;
+  inset: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 800 / 520;
+  object-fit: cover;
+}
+
+.milestone__photo .photo-slot__label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 11px 18px;
+  color: #3c5d76;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.milestone--blue .milestone__photo {
+  border-radius: 0 0 0 40px;
+  background: #d7e8ef;
+}
+
+.milestone--blue .milestone__photo img {
+  filter: hue-rotate(-13deg);
+}
+
+.milestone__copy {
+  grid-column: 3;
+  grid-row: 1;
+  padding: 15px 12px 15px 8px;
+}
+
+.milestone--reverse .milestone__photo {
+  grid-column: 3;
+}
+
+.milestone--reverse .milestone__copy {
+  grid-column: 1;
+  padding: 15px 8px 15px 12px;
+}
+
+.milestone-marker {
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  width: 17px;
+  height: 17px;
+  box-sizing: content-box;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  background: var(--milestone-color);
+  transform: translateX(-45px);
+}
+
+.milestone--reverse .milestone-marker {
+  transform: translateX(45px);
+}
+
+.milestone__number {
+  margin: 0 0 9px;
+  color: var(--milestone-color);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.milestone__date {
+  margin: 0 0 14px;
+  color: #607285;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.milestone__copy h2 {
+  max-width: 410px;
+  margin: 0 0 16px;
+  color: var(--milestone-color);
+  font-family: var(--font-display);
+  font-size: clamp(24px, 2.5vw, 33px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.6px;
+}
+
+.milestone__copy > p:not([class]) {
+  max-width: 405px;
+  margin: 0;
+  color: #4e6173;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.milestone__status {
+  display: inline-block;
+  margin-top: 21px;
+  color: #5a6e80;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.timeline-endnote {
+  margin: 65px 0 0;
+  color: var(--blue-deep);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .history-hero {
+    padding: 64px 0 55px;
+  }
+  .history-hero::after {
+    right: -285px;
+  }
+  .timeline-intro {
+    gap: 28px;
+  }
+  .milestone {
+    grid-template-columns: minmax(0, 1fr) 112px minmax(0, 1fr);
+    margin-bottom: 65px;
+  }
+  .milestone-marker {
+    transform: translateX(-25px);
+  }
+  .milestone--reverse .milestone-marker {
+    transform: translateX(25px);
+  }
+  .milestone__copy, .milestone--reverse .milestone__copy {
+    padding: 0;
+  }
+  .milestone__photo img {
+    aspect-ratio: 4 / 3;
+  }
+  .milestone__copy h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 680px) {
+  .history-hero {
+    padding: 52px 0 47px;
+  }
+  .history-hero::after {
+    width: 350px;
+    height: 350px;
+    top: -120px;
+    right: -260px;
+    border-width: 55px;
+  }
+  .history-hero .display {
+    margin-top: 16px;
+  }
+  .history-hero__intro {
+    max-width: 380px;
+    font-size: 17px;
+  }
+  .history-archive-note {
+    max-width: 300px;
+    align-items: baseline;
+    margin-top: 24px;
+    font-size: 11px;
+  }
+  .history-timeline {
+    padding: 40px 0 45px;
+  }
+  .timeline-intro {
+    display: block;
+    margin-bottom: 42px;
+  }
+  .timeline-intro .eyebrow {
+    margin-bottom: 16px;
+  }
+  .timeline-intro > p:last-child {
+    font-size: 13px;
+  }
+  .timeline-list {
+    padding-left: 39px;
+  }
+  .milestone {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 26px;
+    min-height: 0;
+    margin-bottom: 58px;
+  }
+  .milestone__photo, .milestone--blue .milestone__photo {
+    border-radius: 0 0 32px 0;
+  }
+  .milestone__photo img {
+    aspect-ratio: 16 / 10;
+  }
+  .milestone__photo .photo-slot__label {
+    padding: 10px 13px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .milestone-marker {
+    position: absolute;
+    left: -37px;
+    top: 28px;
+    width: 11px;
+    height: 11px;
+    border-width: 5px;
+  }
+  .milestone-marker, .milestone--reverse .milestone-marker {
+    transform: none;
+  }
+  .milestone__number {
+    margin-bottom: 8px;
+    font-size: 9px;
+  }
+  .milestone__date {
+    margin-bottom: 12px;
+  }
+  .milestone__copy h2 {
+    margin-bottom: 13px;
+    font-size: 27px;
+  }
+  .milestone__copy > p:not([class]) {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  .milestone__status {
+    margin-top: 16px;
+  }
+  .timeline-connector__path {
+    stroke-width: 6;
+  }
+  .timeline-endnote {
+    max-width: 245px;
+    margin: 44px auto 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .history-page .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
