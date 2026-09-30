@@ -449,7 +449,7 @@ button:focus-visible {
   transform:rotate(90deg)
 }
 
-/* Image slots are deliberate editorial placeholders, never fictional chapter photos. */
+/* Image slots provide consistent editorial crops for chapter photography and placeholders. */
 .photo-slot {
   position:relative;
   overflow:hidden;
