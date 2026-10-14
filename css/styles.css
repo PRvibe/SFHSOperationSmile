@@ -498,6 +498,45 @@ button:focus-visible {
   aspect-ratio:4/5
 }
 
+/* Supplied chapter photos keep their full frame; captions sit below the image. */
+figure.photo-slot.photo-slot--natural {
+  aspect-ratio:auto;
+  min-height:0
+}
+
+.photo-slot.photo-slot--natural>img {
+  position:static;
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain
+}
+
+.photo-slot--natural .photo-slot__label {
+  position:static;
+  background:#f5f8fb
+}
+
+/* Rotate the displayed frame while preserving the supplied original file. */
+.photo-slot__rotated {
+  position:relative;
+  width:100%;
+  aspect-ratio:var(--photo-aspect);
+  overflow:hidden
+}
+
+.photo-slot .photo-slot__rotated>img {
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:var(--photo-width);
+  height:auto;
+  aspect-ratio:auto;
+  max-width:none;
+  transform:translate(-50%,-50%) rotate(-90deg)
+}
+
 .photo-slot__overline {
   position:absolute;
   top:27px;
@@ -601,6 +640,11 @@ button:focus-visible {
   bottom:0
 }
 
+.home-hero__visual.photo-slot--natural {
+  align-self:center;
+  border-radius:0 0 0 36px
+}
+
 .home-hero::after {
   content:'';
   position:absolute;
@@ -681,6 +725,36 @@ button:focus-visible {
 
 .highlight-slide__visual {
   min-height:380px
+}
+
+.highlight-slide__visual.photo-slot--natural {
+  display:flex;
+  flex-direction:column;
+  justify-content:center
+}
+
+.highlight-slide__visual.photo-slot--natural .photo-slot__label {
+  margin-top:auto
+}
+
+.highlight-slide__visual--cards.photo-slot--natural>img {
+  max-height:400px;
+  transform:rotate(180deg)
+}
+
+.highlight-slide.highlight-slide--text-only {
+  grid-template-columns:1fr
+}
+
+.highlight-slide--text-only .highlight-slide__content {
+  width:100%;
+  max-width:740px;
+  margin-inline:auto
+}
+
+.highlight-slide--text-only .highlight-slide__content>p:not(.eyebrow),
+.highlight-slide--text-only .highlight-slide__content h3 {
+  max-width:580px
 }
 
 .highlight-slide__visual .photo-slot__message {

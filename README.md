@@ -37,15 +37,15 @@ All Join Now / Join Our Chapter links use **https://linktr.ee/sfhsoperationsmile
 ## Update chapter content
 
 - **Highlights:** the supplied accomplishments are **40K+ clothing items donated**, **200+ toothpaste items collected**, and **200+ cards written for patients with cleft conditions**. Edit the three `.highlight-slide` articles in `index.html`. Preserve the matching tab IDs, `aria-controls`, and `aria-labelledby` values when changing copy.
-- **Officers:** edit the five `.officer-profile` articles in `about.html`. Each name appears above its portrait; roles are provisional and explicitly marked for confirmation. Replace the name, role, photo, and short biography together. Keep the five-profile layout unless the chapter structure changes.
-- **History:** edit the ten `.milestone` articles in `history.html`. Dates, stories, photos, and chronological order await confirmation. Three milestones carry the supplied accomplishments; the others are clearly identified story slots. Replace draft dates and copy with verified chapter records. Alternate the existing blue/reverse classes and preserve unique milestone heading IDs. The connector measures its markers automatically after content and layout changes.
+- **Officers:** edit the five `.officer-profile` articles in `about.html`. The chapter has confirmed Nikash Nemmara as President, Renesh Mylapuram as Vice President, and Advaith Kotha, Yagnaram Chintu, and Pranav Rajkumar as Officers. Each name appears above its supplied portrait. Keep the five-profile layout unless the chapter structure changes.
+- **History:** edit the ten `.milestone` articles in `history.html`. Dates, detailed stories, and chronological order await confirmation. Four entries have supplied chapter images; the remaining entries use compact text-only layouts. Three milestones carry the supplied accomplishments. Preserve unique milestone heading IDs. The connector measures its markers automatically after content and layout changes.
 - **Contacts:** the footer's Instagram and email entries are labeled placeholders. Replace them with verified links, such as an Instagram profile URL or `mailto:` address, across all four pages.
 
-Real photography, officer names/confirmed roles/biographies, historical dates/events, social contacts, and the video URL still need chapter input. Review the editable chapter introduction as part of that content handoff. This site identifies itself as the South Forsyth school chapter, not the international organization's website.
+Chapter photography and officer names, roles, and portraits have been supplied. Personal biographies, historical dates/events, social contacts, and the video URL still need chapter input. Review the editable chapter introduction as part of that content handoff. This site identifies itself as the South Forsyth school chapter, not the international organization's website.
 
-## Replace image placeholders
+## Update chapter photographs
 
-Store chapter photographs in `assets/images/`. The [image inventory](assets/images/README.md) lists suggested filenames and sizes. Optimized WebP is recommended; JPEG also works.
+Store chapter photographs in `assets/images/`. The [image inventory](assets/images/README.md) lists supplied files and their placements. Unmatched picture slots have been removed; preserve the text-only layouts until a relevant photo is available.
 
 1. Replace each image's `src` with its local path, such as `assets/images/chapter-service.webp`.
 2. Write accurate `alt` text describing the photograph's relevant content. Replace placeholder language.
@@ -95,7 +95,7 @@ These cover route and asset paths, fragments, ID/ARIA relationships, navigation,
 
 After editing, check all four pages at desktop and mobile widths, including 320px. Try the mobile menu with Tab and Escape, the highlights with arrow keys/Home/End and previous/next buttons, the participation disclosures, the timeline's image/text spacing, and reduced-motion settings. Confirm new photos have useful crops and the footer contacts work.
 
-Stylesheet URLs currently use a `?v=3` query string to refresh cached CSS. If a browser or host keeps showing an earlier style after deployment, increase this value consistently on all four HTML pages, or perform a hard refresh during local work.
+Stylesheet URLs currently use a `?v=4` query string to refresh cached CSS. If a browser or host keeps showing an earlier style after deployment, increase this value consistently on all four HTML pages, or perform a hard refresh during local work.
 
 ## Hosting
 

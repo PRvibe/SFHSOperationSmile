@@ -145,18 +145,18 @@
   background: #d5e3ef;
 }
 
-.milestone__photo img {
-  position: relative;
+.milestone__photo > img {
+  position: static;
   inset: auto;
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 800 / 520;
-  object-fit: cover;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .milestone__photo .photo-slot__label {
-  position: absolute;
+  position: static;
   left: 0;
   right: 0;
   bottom: 0;
@@ -172,8 +172,23 @@
   background: #d7e8ef;
 }
 
-.milestone--blue .milestone__photo img {
-  filter: hue-rotate(-13deg);
+.milestone__photo--portrait {
+  max-width: 280px;
+  justify-self: center;
+  align-self: center;
+}
+
+.photo-slot--natural.milestone__photo.milestone__photo--portrait > img {
+  width: auto;
+  max-width: 100%;
+  max-height: 350px;
+  margin-inline: auto;
+}
+
+.milestone__photo--receipt {
+  max-width: 342px;
+  justify-self: center;
+  align-self: center;
 }
 
 .milestone__copy {
@@ -285,9 +300,6 @@
   .milestone__copy, .milestone--reverse .milestone__copy {
     padding: 0;
   }
-  .milestone__photo img {
-    aspect-ratio: 4 / 3;
-  }
   .milestone__copy h2 {
     font-size: 26px;
   }
@@ -344,9 +356,6 @@
   .milestone__photo, .milestone--blue .milestone__photo {
     border-radius: 0 0 32px 0;
   }
-  .milestone__photo img {
-    aspect-ratio: 16 / 10;
-  }
   .milestone__photo .photo-slot__label {
     padding: 10px 13px;
     font-size: 8px;
@@ -390,6 +399,15 @@
     font-size: 17px;
     line-height: 1.6;
   }
+}
+
+.milestone--text-only {
+  min-height: 0;
+  margin-bottom: 48px;
+}
+
+.milestone--text-only:last-child {
+  margin-bottom: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

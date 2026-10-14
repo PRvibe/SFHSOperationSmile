@@ -8,8 +8,8 @@
   <title>Operation Smile - South Forsyth Chapter</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/nunito-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/styles.css?v=3">
-  <link rel="stylesheet" href="css/responsive.css?v=3">
+  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/responsive.css?v=4">
   <script src="js/navigation.js" defer></script>
   <script src="js/slider.js" defer></script>
   <script src="js/main.js" defer></script>
@@ -53,13 +53,9 @@
           </div>
           <p class="hero-location">Student-led. Community-powered.</p>
         </div>
-        <!-- PHOTO SLOT: replace src with a 1400×1200 chapter service-event photo; update alt and remove photo-slot__message, __overline, __index. -->
-        <figure class="photo-slot home-hero__visual">
-          <img src="assets/placeholder-landscape.svg" alt="Chapter service-event photo placeholder" width="1200" height="900" fetchpriority="high">
-          <span class="photo-slot__overline" aria-hidden="true">THE PEOPLE. THE PURPOSE.</span>
-          <span class="photo-slot__index" aria-hidden="true">01</span>
-          <span class="photo-slot__message" aria-hidden="true">A little time.<br>A lasting difference.</span>
-          <figcaption class="photo-slot__label"><span>South Forsyth, together.</span><span>CHAPTER PHOTO COMING SOON</span></figcaption>
+        <figure class="photo-slot photo-slot--natural home-hero__visual">
+          <img src="assets/images/chapter/clothing-drive-team.png" alt="Chapter members standing beside a car filled with bags of clothing donations" width="1024" height="768" fetchpriority="high">
+          <figcaption class="photo-slot__label"><span>South Forsyth, together.</span><span>OUR CLOTHING DRIVE</span></figcaption>
         </figure>
       </div>
     </section>
@@ -78,31 +74,21 @@
           <p class="highlights__intro">A few ways our chapter is turning compassion into something you can count.</p>
         </div>
         <div class="carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="Chapter impact highlights">
-          <!-- HIGHLIGHT COMPONENT: verified totals supplied by chapter; replace photographs when available. -->
+          <!-- HIGHLIGHT COMPONENT: verified totals and photographs supplied by the chapter. -->
           <article class="highlight-slide" id="highlight-1" data-slide tabindex="0" role="tabpanel" aria-labelledby="highlight-tab-1">
-            <figure class="photo-slot highlight-slide__visual">
-              <img src="assets/placeholder-landscape.svg" alt="Photo placeholder for volunteers sorting clothing donations" width="1200" height="900" loading="lazy">
-              <span class="photo-slot__overline" aria-hidden="true">COMMUNITY IN ACTION</span>
-              <span class="photo-slot__message" aria-hidden="true">Care comes<br>in many forms.</span>
-              <figcaption class="photo-slot__label"><span>Our clothing collection</span><span>PHOTO COMING SOON</span></figcaption>
+            <figure class="photo-slot photo-slot--natural highlight-slide__visual">
+              <img src="assets/images/chapter/clothing-donations.png" alt="Bags of donated clothing gathered in a garage" width="337" height="252" loading="lazy">
+              <figcaption class="photo-slot__label"><span>Our clothing collection</span><span>COMMUNITY IN ACTION</span></figcaption>
             </figure>
             <div class="highlight-slide__content"><p class="eyebrow">01 / COMMUNITY COLLECTIONS</p><strong class="highlight-slide__number">40K+</strong><h3>Clothing items donated</h3><p>Thousands of items. One caring community. A chapter effort made possible by the generosity of students and families.</p></div>
           </article>
-          <article class="highlight-slide" id="highlight-2" data-slide tabindex="0" role="tabpanel" aria-labelledby="highlight-tab-2">
-            <figure class="photo-slot highlight-slide__visual">
-              <img src="assets/placeholder-landscape.svg" alt="Photo placeholder for the chapter’s toothpaste collection" width="1200" height="900" loading="lazy">
-              <span class="photo-slot__overline" aria-hidden="true">EVERY CONTRIBUTION COUNTS</span>
-              <span class="photo-slot__message" aria-hidden="true">Small essentials.<br>Shared care.</span>
-              <figcaption class="photo-slot__label"><span>Our toothpaste collection</span><span>PHOTO COMING SOON</span></figcaption>
-            </figure>
+          <article class="highlight-slide highlight-slide--text-only" id="highlight-2" data-slide tabindex="0" role="tabpanel" aria-labelledby="highlight-tab-2">
             <div class="highlight-slide__content"><p class="eyebrow">02 / ESSENTIALS DRIVE</p><strong class="highlight-slide__number">200+</strong><h3>Toothpaste items collected</h3><p>A simple everyday essential, collected with care. Our students came together to turn small contributions into a shared effort.</p></div>
           </article>
           <article class="highlight-slide" id="highlight-3" data-slide tabindex="0" role="tabpanel" aria-labelledby="highlight-tab-3">
-            <figure class="photo-slot highlight-slide__visual">
-              <img src="assets/placeholder-landscape.svg" alt="Photo placeholder for students creating handwritten patient cards" width="1200" height="900" loading="lazy">
-              <span class="photo-slot__overline" aria-hidden="true">A LITTLE KINDNESS GOES FAR</span>
-              <span class="photo-slot__message" aria-hidden="true">From our hearts.<br>To their hands.</span>
-              <figcaption class="photo-slot__label"><span>Messages of encouragement</span><span>PHOTO COMING SOON</span></figcaption>
+            <figure class="photo-slot photo-slot--natural highlight-slide__visual highlight-slide__visual--cards">
+              <img src="assets/images/chapter/patient-cards.png" alt="Handmade folded patient cards arranged on a table" width="811" height="1024" loading="lazy">
+              <figcaption class="photo-slot__label"><span>Messages of encouragement</span><span>HANDMADE WITH CARE</span></figcaption>
             </figure>
             <div class="highlight-slide__content"><p class="eyebrow">03 / WORDS OF ENCOURAGEMENT</p><strong class="highlight-slide__number">200+</strong><h3>Cards written for patients with cleft conditions</h3><p>Handwritten messages of kindness, encouragement, and hope. A reminder that someone is thinking of you.</p></div>
           </article>
