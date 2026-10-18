@@ -9,13 +9,13 @@ These photographs were supplied by the chapter. Original files are preserved; CS
 | `patient-cards.png` | Homepage patient-card highlight | 811 × 1024 |
 | `chapter-group.png` | About page chapter story | 923 × 2048 |
 | `chapter-meeting.png` | History: Finding our community | 322 × 240 |
-| `donation-delivery.png` | History: Turning care into action | 206 × 281 |
-| `atlanta-mission-receipt.png` | History: Clothing collection | 342 × 166 |
+| `donation-delivery.png` | Retained asset; not currently displayed | 206 × 281 |
+| `atlanta-mission-receipt.png` | Retained asset; not currently displayed | 342 × 166 |
 | `patient-cards-colorful.png` | History: Patient cards | 768 × 1024 |
 
-The five confirmed officer portraits remain in `leadership/` and appear on the About page. The receipt is shown at its original size or smaller; no dates or quantities were inferred from its text. History dates, detailed stories, and chronological order still require chapter confirmation.
+The five confirmed officer portraits remain in `leadership/` and appear on the About page. The history page now contains only the chapter-purpose, community, and patient-card entries, displayed as 01–03. The latter two entries use the meeting and colorful-card photographs. No dates, receipt details, or new historical events were inferred from these images, and the page has no placeholder dates or story labels.
 
-The toothpaste highlight and six history entries have no matching supplied photo. Their image figures were removed, and text-only layouts retain their content. No empty photo panels remain. The optional chapter film is separate from the photograph collection.
+The homepage toothpaste highlight and the first history entry use text-only layouts. No empty photo panels remain. The delivery and receipt images are preserved as unused assets after their history entries were removed. The supplied member recording is stored separately at `assets/media/chapter-members.mp4` and appears in the Get Involved page's native video player.
 
 For every replacement:
 

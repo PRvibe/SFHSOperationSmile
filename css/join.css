@@ -1,0 +1,44 @@
+/* Member recording uses its own dimensions instead of the old film placeholder. */
+.join-film .section-heading {
+  max-width:1020px;
+  margin-inline:auto
+}
+
+.join-film .section-heading>p {
+  max-width:340px;
+  font-size:14px;
+  color:var(--text-secondary)
+}
+
+.video-player.video-player--members {
+  width:min(100%, 34vh, 384px);
+  aspect-ratio:auto;
+  background:#101923
+}
+
+.video-player--members .video-player__media {
+  height:auto;
+  background:#101923
+}
+
+.video-player--members .video-player__media:fullscreen {
+  height:100%
+}
+
+.film-caption a {
+  color:var(--brand-blue);
+  text-align:right;
+  text-decoration:underline;
+  text-underline-offset:3px
+}
+
+@media (max-width:680px) {
+  .join-film .section-heading {
+    flex-direction:column;
+    align-items:flex-start;
+    gap:16px
+  }
+  .join-film .section-heading>p {
+    font-size:13px
+  }
+}

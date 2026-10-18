@@ -48,24 +48,6 @@
   line-height: 1.7;
 }
 
-.history-archive-note {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin: 29px 0 0;
-  color: #335b80;
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.history-archive-note span {
-  width: 6px;
-  height: 6px;
-  flex: 0 0 6px;
-  border-radius: 50%;
-  background: var(--brand-blue);
-}
-
 .history-timeline {
   overflow: hidden;
   padding: 62px 0 66px;
@@ -172,25 +154,6 @@
   background: #d7e8ef;
 }
 
-.milestone__photo--portrait {
-  max-width: 280px;
-  justify-self: center;
-  align-self: center;
-}
-
-.photo-slot--natural.milestone__photo.milestone__photo--portrait > img {
-  width: auto;
-  max-width: 100%;
-  max-height: 350px;
-  margin-inline: auto;
-}
-
-.milestone__photo--receipt {
-  max-width: 342px;
-  justify-self: center;
-  align-self: center;
-}
-
 .milestone__copy {
   grid-column: 3;
   grid-row: 1;
@@ -234,13 +197,6 @@
   text-transform: uppercase;
 }
 
-.milestone__date {
-  margin: 0 0 14px;
-  color: #607285;
-  font-size: 11px;
-  font-weight: 500;
-}
-
 .milestone__copy h2 {
   max-width: 410px;
   margin: 0 0 16px;
@@ -258,14 +214,6 @@
   color: #4e6173;
   font-size: 14px;
   line-height: 1.8;
-}
-
-.milestone__status {
-  display: inline-block;
-  margin-top: 21px;
-  color: #5a6e80;
-  font-size: 11px;
-  font-style: italic;
 }
 
 .timeline-endnote {
@@ -323,12 +271,6 @@
     max-width: 380px;
     font-size: 17px;
   }
-  .history-archive-note {
-    max-width: 300px;
-    align-items: baseline;
-    margin-top: 24px;
-    font-size: 11px;
-  }
   .history-timeline {
     padding: 40px 0 45px;
   }
@@ -376,9 +318,6 @@
     margin-bottom: 8px;
     font-size: 9px;
   }
-  .milestone__date {
-    margin-bottom: 12px;
-  }
   .milestone__copy h2 {
     margin-bottom: 13px;
     font-size: 27px;
@@ -386,9 +325,6 @@
   .milestone__copy > p:not([class]) {
     font-size: 14px;
     line-height: 1.75;
-  }
-  .milestone__status {
-    margin-top: 16px;
   }
   .timeline-connector__path {
     stroke-width: 6;

@@ -117,7 +117,7 @@ test('Required chapter content remains available in static HTML', () => {
   const history = pages.get('history.html');
   assert.equal(home.tags.filter(t => hasClass(t, 'highlight-slide')).length, 3);
   assert.equal(about.tags.filter(t => hasClass(t, 'officer-profile')).length, 5);
-  assert.equal(history.tags.filter(t => hasClass(t, 'milestone')).length, 10);
+  assert.equal(history.tags.filter(t => hasClass(t, 'milestone')).length, 3);
   assert(home.source.includes('40K+'));
   assert.equal((home.source.match(/200\+/g) || []).length, 2);
   for (const profile of about.source.matchAll(/<article\b[^>]*class="officer-profile[^"]*"[^>]*>([\s\S]*?)<\/article>/g)) {

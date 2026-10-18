@@ -10,9 +10,8 @@
   <link rel="preload" href="assets/fonts/nunito-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css?v=4">
   <link rel="stylesheet" href="css/responsive.css?v=4">
+  <link rel="stylesheet" href="css/join.css?v=1">
   <script src="js/navigation.js" defer></script>
-  <script src="js/config.js" defer></script>
-  <script src="js/video.js?v=2" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -45,12 +44,15 @@
   <section class="page-hero join-hero" aria-labelledby="join-title">
     <div class="container"><p class="eyebrow">YOUR TIME. YOUR TALENT. YOUR IMPACT.</p><h1 id="join-title" class="display">BECOME ONE OF<br>OUR <span>MEMBERS</span></h1><p class="lede">You don’t need to have it all figured out. Just bring a little kindness and a willingness to make a difference.</p><a class="button-primary" href="https://linktr.ee/sfhsoperationsmile" target="_blank" rel="noopener noreferrer">Join Now <span class="button-arrow" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></div>
   </section>
-  <section class="join-film container" aria-label="Our chapter film">
-    <!-- VIDEO: set joinVideoUrl in js/config.js. No third-party player loads until a visitor clicks Play. -->
-    <div class="video-player" data-video-player>
-      <div class="video-placeholder"><span class="video-placeholder__symbol" aria-hidden="true">▷</span><p class="eyebrow">A LOOK INSIDE OUR CHAPTER</p><h2 id="film-title">Our chapter film<br>is on its way.</h2><p>A little look at the people, moments, and purpose that bring us together. Check back soon.</p></div>
+  <section class="join-film container" aria-labelledby="film-title">
+    <div class="section-heading"><div><p class="eyebrow">THE PEOPLE BEHIND THE PURPOSE</p><h2 id="film-title">Meet our members</h2></div><p id="film-description">Take a look through our member recording. Play, pause, or use the timeline to explore at your own pace.</p></div>
+    <div class="video-player video-player--members">
+      <video class="video-player__media" width="384" height="848" controls playsinline preload="metadata" aria-label="South Forsyth Operation Smile member recording" aria-describedby="film-description">
+        <source src="assets/media/chapter-members.mp4" type="video/mp4">
+        Your browser does not support this video. <a href="assets/media/chapter-members.mp4">Open the member recording</a>.
+      </video>
     </div>
-    <div class="film-caption"><span>South Forsyth. Many voices, one mission.</span><span>Our chapter, in motion · Coming soon</span></div>
+    <div class="film-caption"><span>South Forsyth. Many voices, one mission.</span><a href="assets/media/chapter-members.mp4">Open the recording</a></div>
   </section>
   <section class="section opportunities" id="ways-to-help" aria-labelledby="opportunities-title">
     <div class="container opportunities__layout">
